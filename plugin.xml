@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cn.edu.gdmec.t00385.lightsensor"
-        version="0.0.1">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cn.edu.gdmec.t00385.lightsensor"
+    version="0.0.1">
 
     <name>Light Sensor</name>
     <description>Light Sensor Plugin for Android</description>
     <license>Apache 2.0</license>
-    <author>York Cui</author>
+	<author>York Cui</author>
     <keywords>cordova,Light,sensor</keywords>
     <repo>https://github.com/gdmec/lightsensor.git</repo>
 
@@ -27,12 +27,12 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="LightSensor">
-                <param name="android-package" value="cn.edu.gdmec.t00385.lightsensor.LightSensorListener"/>
-            </feature>
-        </config-file>
+	        <feature name="LightSensor">
+	            <param name="android-package" value="cn.edu.gdmec.t00385.lightsensor.LightSensorListener"/>
+	        </feature>
+	    </config-file>
 
-        <source-file src="src/android/LightSensorListener.java" target-dir="src/cn/edu/gdmec/t00385/lightsensor" />
+	    <source-file src="src/android/LightSensorListener.java" target-dir="src/cn/edu/gdmec/t00385/lightsensor" />
     </platform>
 
 </plugin>
